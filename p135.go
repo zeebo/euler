@@ -5,6 +5,9 @@ import (
 	"math"
 )
 
+//loop bounds based on
+//http://www.wolframalpha.com/input/?i=x%5E2+-+%28x-n%29%5E2+-+%28x-2n%29%5E2+%3E+0%2C+x%5E2+-+%28x-n%29%5E2+-+%28x-2n%29%5E2+%3C%3D+1000000%2C+x+%3E+2n%2C+n+%3E+0
+
 //a million 1-index based ints!
 var counts [1e6 + 1]int
 
