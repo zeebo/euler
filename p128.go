@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"time"
 )
 
 func sieve() {
@@ -63,6 +64,7 @@ func diffs(i int, x int) (int64, []int) {
 }
 
 func main() {
+	s := time.Now()
 	items := []int64{1, 2}
 	for ring := 2; len(items) < 2000; ring++ {
 		for i := 0; i < 2; i++ {
@@ -72,5 +74,5 @@ func main() {
 			}
 		}
 	}
-	fmt.Println(items[9], items[1999])
+	fmt.Println(items[9], items[1999], time.Since(s))
 }
